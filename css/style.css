@@ -157,7 +157,7 @@ nav{
     "main main"
     "footer footer";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 4vh 9vh 80vh 7vh;
+    grid-template-rows: 5vh 9vh 80vh 7vh;
 }
 
 /*FOOTER*/
@@ -171,7 +171,7 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .footerlink{
@@ -179,14 +179,12 @@ footer{
 }
 
 .footer__link{
-    margin-bottom: 10px;
     text-decoration: none;
     margin-left: 20px;
 }
 
 .footer__texto {
     color: white;
-    margin-bottom: 20px;
 }
 
 /*html CONTACTO*/
@@ -310,7 +308,7 @@ footer{
     "form form"
     "footer footer";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 4vh 9vh 80vh 7vh;
+    grid-template-rows: 5vh 9vh 80vh 7vh;
 }
 
 /*Media Q mobile*/
