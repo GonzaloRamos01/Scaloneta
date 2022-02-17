@@ -209,7 +209,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4444;
+    background-color: #444;
     margin-bottom: 20px;
 }
 
@@ -339,6 +339,47 @@ footer{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/*JUGADORES*/
+
+.gridcontainerjugadores{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "maintabla"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 6vh 10vh auto 7vh;
+}
+
+.maintabla{
+    grid-area: maintabla;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.table__jugadores{
+    margin: 25px;
+    color: white;
+    border: white 3px solid;
+}
+
+.tabletr{
+    background-color: #444;
+}
+
+.tableth{
+    text-align: center;
+    padding: 10px;
+}
+
+.tabletd{
+    padding: 4px;
+    text-align: center;
 }
 
 /*Media Q mobile*/
@@ -506,6 +547,21 @@ footer{
     grid-auto-rows: 350px;
     padding: 5px;
     }
+
+    .deco:hover {
+        padding: 1px;
+    }
+    
+    /*JUGADORES*/
+
+    .gridcontainerjugadores{
+    grid-template-areas: 
+    "nav"
+    "maintabla"
+    "footer";
+    grid-template-rows: auto auto auto;
+    }
+
 
 }
 
