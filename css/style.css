@@ -370,16 +370,68 @@ footer{
 
 .tabletr{
     background-color: #444;
+    text-align: center;
 }
 
 .tableth{
-    text-align: center;
     padding: 10px;
 }
 
 .tabletd{
     padding: 4px;
+}
+
+/*PARTIDOS*/
+
+.gridcontainerpartidos{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "mainpartidos"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 6vh 10vh 80vh 7vh;
+}
+
+.mainpartidos{
+    grid-area: mainpartidos;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__secundarioTabla{
+    color: white;
+    margin: 20px 0px;
+}
+
+.table__partidos{
+    color: white;
+    border: 3px solid white;
+}
+
+.tr__partidos{
+    background-color: #444;
     text-align: center;
+}
+
+.thpartidos{
+    padding: 6px;
+}
+
+.tdpartidos{
+    padding: 6px;
+}
+
+.td__victoria{
+    background-color: green;
+}
+
+.td__empate{
+    background-color: orange;
 }
 
 /*Media Q mobile*/
@@ -562,6 +614,33 @@ footer{
     grid-template-rows: auto auto auto;
     }
 
+    /*PARTIDOS*/
 
+    .gridcontainerpartidos{
+    grid-template-areas: 
+    "nav"
+    "mainpartidos"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    }
+
+    .titulo__secundarioTabla{
+    margin: 4px;
+    }
+
+    .table__partidos{
+        width:min-content;
+        margin: 8px;
+    }
+    
+    .thpartidos{
+        padding: 4px;
+    }
+    
+    .tdpartidos{
+        padding: 3px;
+    }
+    
 }
 
