@@ -1,0 +1,105 @@
+.gridcontainercontacto{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "form form"
+    "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows:12vh 80vh 10vh;
+
+.main__form {
+    grid-area: form;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .titulo__secundarioform{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    margin-bottom: 20px;
+    .form {
+        display: flex;
+        flex-direction: column;
+        min-width: 400px;
+        text-align: center;
+        padding: 30px;
+        .form__section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .form__inputenviar {
+                background-color: rgba(135, 207, 235, 0.418);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                padding: 7px;
+                margin: 10px;
+                color: rgb(255, 255, 255);
+                border: none;
+                font-size: 1.3em;
+                &:focus {
+                    background: linear-gradient(to bottom, transparent, skyblue)
+                }
+            }
+            .textarea {
+                font-family: 'Roboto', sans-serif;
+                color: white;
+                margin-bottom: 7px;
+                resize: none;
+                display: flex;
+                width: 100%;
+                background: transparent;
+                border: none;
+                border-bottom: skyblue 3px solid;
+                &::placeholder{
+                    font-size: 1rem;
+                }
+                
+                &:focus {
+                    background: linear-gradient(to bottom, transparent, #333);
+                    outline: none;
+                }
+            }
+            .form__input {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                padding: 7px;
+                margin: 10px;
+                background: transparent;
+                color: white;
+                border: none;
+                border-bottom: skyblue 3px solid;
+                &:focus{
+                    outline: none;
+                    background: linear-gradient(to bottom, transparent, #333);
+                }
+            }
+        }
+    }
+    .form-img {
+        padding: 10px;
+        display: flex;
+        height: 400px;
+        width: 400px; 
+    }
+    .form-img img {
+        width: 100%;
+        border-radius: 50%;
+        padding: 20px;
+    }
+}
+}
+}

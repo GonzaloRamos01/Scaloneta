@@ -1,0 +1,25 @@
+
+footer{
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    .footer__texto {
+        color: white;
+    }
+    .footerlink{
+        display: flex;
+        
+    .footer__link{
+    text-decoration: none;
+    margin-left: 20px;
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0,4s ease-in-out;
+    }
+    }
+    }
+
+}

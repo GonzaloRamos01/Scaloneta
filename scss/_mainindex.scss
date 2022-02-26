@@ -1,0 +1,58 @@
+.grid-area {
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "main main"
+    "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows:10vh 80vh 10vh;
+    }
+
+.main {
+    width: 100%;
+    background-color: black;
+    grid-area: main;
+    display: flex;
+    justify-content: space-evenly;
+    .div__texto {
+        width: 50%;
+        color: white;
+        .titulo__secundario {
+            margin: 20px;
+            font-size: 1.7em;
+            text-align: center;
+        }
+        .texto__parrafo {
+            font-size: 1em;
+            margin: 20px;
+            .linkcontacto {
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    font-weight: bold;
+                    border-bottom: .1rem solid white;
+                    padding-bottom: 0.1rem;
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+    .card {
+        margin-bottom: 10px;
+        margin-right: 20px;
+        .card__img{
+            object-fit: cover;
+            height: 400px;
+            width: 400px;
+            border-radius: 5%;
+            padding: 6px;
+            border: #999 6px solid;
+        }
+        .card__piefoto{
+            color: white;
+            text-align: center;
+            margin: 10px;
+        }
+    }
+    
+}

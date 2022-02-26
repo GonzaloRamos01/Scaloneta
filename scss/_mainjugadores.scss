@@ -1,0 +1,32 @@
+.gridcontainerjugadores{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "maintabla"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 12vh auto 10vh;
+    .maintabla{
+        grid-area: maintabla;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        .table__jugadores{
+            margin: 25px;
+            color: white;
+            border: white 3px solid;
+            .tabletr{
+                background-color: #444;
+                text-align: center;
+                .tableth{
+                    padding: 10px;
+                }
+                .tabletd{
+                    padding: 4px;
+                }
+            }
+        }
+    }
+
+}

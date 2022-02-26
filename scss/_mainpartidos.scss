@@ -1,0 +1,44 @@
+.gridcontainerpartidos{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "mainpartidos"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 12vh auto 10vh;
+    .mainpartidos{
+        grid-area: mainpartidos;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .titulo__secundarioTabla{
+        color: white;
+        margin: 20px 0px;
+        }
+        .table__partidos{
+            color: white;
+            border: 3px solid white;
+            margin: 10px 0px;
+            .tr__partidos{
+                background-color: #444;
+                text-align: center;
+                .thpartidos{
+                    padding: 6px;
+                }
+                
+                .tdpartidos{
+                    padding: 6px;
+                }
+                .td__victoria{
+                    background-color: green;
+                }
+                
+                .td__empate{
+                    background-color: orange;
+                }
+            }
+    }
+    }
+}
