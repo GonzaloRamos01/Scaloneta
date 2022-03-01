@@ -31,7 +31,7 @@ nav {
         nav .nav .nav__links .nav__item .nav__link {
           text-decoration: none;
           color: white;
-          font-size: 1.6rem; }
+          font-size: 2rem; }
           nav .nav .nav__links .nav__item .nav__link:hover {
             font-weight: bold;
             border-bottom: .1rem solid black;
@@ -276,83 +276,73 @@ footer {
         .gridcontainerpartidos .mainpartidos .table__partidos .tr__partidos .td__empate {
           background-color: orange; }
 
-@media (max-width: 480px) {
-  /*INDEX*/
-  /*MAIN*/
-  /*grid index*/
+@media only screen and (max-width: 480px) {
   nav {
     flex-direction: column;
     justify-content: center; }
-  .nav__logo--imagen {
-    margin-top: 5px; }
-  .nav__links {
-    font-size: 12px;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap; }
-  .nav__item {
-    margin: 3px 10px; }
-  .search {
-    height: 20px;
-    margin-bottom: 4px;
-    margin-top: 2px;
-    font-size: 0.9em; }
-  .barranavegacion:focus {
-    transition: all 0s; }
-  .grid-area {
-    grid-template-areas: "nav" "main" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto; }
-  .main {
-    flex-direction: column; }
-  .div__texto {
-    width: 100%; }
-  .titulo__secundario {
-    font-size: 1.4em; }
-  /*IMAGEN SCALONI MAIN INDEX*/
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5px;
-    margin-right: 0px;
-    margin-bottom: 5px; }
-  .card__img {
-    height: 250px;
-    width: 250px; }
-  .card__piefoto {
-    margin: 5px; }
-  footer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .footer__link {
-    margin: 0 15px;
-    text-decoration: none; }
-  .footer__texto {
-    font-size: 14px;
-    margin-bottom: 0px; }
-  /*CONTACTO*/
-  .titulo__secundarioform {
-    font-size: 16px;
-    margin: 20px 0px; }
-  .flex-container {
-    flex-direction: column;
-    width: auto; }
-  .form {
-    min-width: auto;
-    padding: 0px; }
-  .form-img {
-    height: 250px;
-    width: 250px; }
-  .textarea::placeholder {
-    font-size: 16px; }
-  .form__inputenviar {
-    font-size: 1em; }
+    nav .nav__logo--imagen {
+      margin-top: 5px; }
+    nav .nav__links {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap; }
+      nav .nav__links .nav__item {
+        margin: 0px 0px; }
+        nav .nav__links .nav__item .nav__link {
+          font-size: 10px; }
+    nav .search {
+      height: 30px;
+      margin-bottom: 4px;
+      margin-top: 2px;
+      font-size: 0.9em; }
+      nav .search:focus {
+        transition: all 0s; } }
+
+@media only screen and (max-width: 480px) {
   .gridcontainercontacto {
     grid-template-areas: "nav" "form" "footer";
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto; }
+    .gridcontainercontacto .titulo__secundarioform {
+      font-size: 16px;
+      margin: 20px 0px; }
+    .gridcontainercontacto .flex-container {
+      flex-direction: column;
+      width: auto; }
+      .gridcontainercontacto .flex-container .form {
+        min-width: auto;
+        padding: 0px; }
+      .gridcontainercontacto .flex-container .form-img {
+        height: 250px;
+        width: 250px; }
+      .gridcontainercontacto .flex-container .form__inputenviar {
+        font-size: 1em; }
+      .gridcontainercontacto .flex-container .textarea::placeholder {
+        font-size: 16px; } }
+
+@media only screen and (max-width: 480px) {
+  .grid-area {
+    grid-template-areas: "nav" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; }
+    .grid-area .main {
+      flex-direction: column; }
+      .grid-area .main .div__texto {
+        width: 100%; }
+        .grid-area .main .div__texto .titulo__secundario {
+          font-size: 1.4em; }
+      .grid-area .main .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+        margin-right: 0px;
+        margin-bottom: 5px; }
+        .grid-area .main .card .card__piefoto {
+          margin: 5px; }
+        .grid-area .main .card .card__img {
+          height: 250px;
+          width: 250px; }
   /*GALERÍA*/
   .gridcontainergaleria {
     grid-template-areas: "nav" "galeria" "footer";
@@ -380,3 +370,15 @@ footer {
     padding: 4px; }
   .tdpartidos {
     padding: 3px; } }
+
+@media only screen and (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .footer__link {
+      margin: 0 15px;
+      text-decoration: none; }
+    footer .footer__texto {
+      font-size: 14px;
+      margin-bottom: 0px; } }
