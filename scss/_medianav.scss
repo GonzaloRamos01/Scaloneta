@@ -11,8 +11,8 @@
             flex-wrap: wrap;
             .nav__item {
                 margin:0px 0px;
-                .nav__link {
-                    font-size: 10px;
+                .nav__link{
+                    font-size: 0.2rem;
                 }
             }
         }
@@ -20,7 +20,7 @@
             height: 30px;
             margin-bottom: 4px;
             margin-top: 2px;
-            font-size: 0.9em;
+            font-size: 1em;
             &:focus{
                 transition: all 0s;
             }

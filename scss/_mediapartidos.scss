@@ -1,0 +1,24 @@
+@media only screen and (max-width:480px) {
+.gridcontainerpartidos{
+    grid-template-areas: 
+    "nav"
+    "mainpartidos"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    .titulo__secundarioTabla{
+        margin: 4px;
+    }
+    
+    .table__partidos{
+        width:min-content;
+        margin: 8px;
+        .thpartidos{
+            padding: 4px;
+        }
+        .tdpartidos{
+            padding: 3px;
+        }
+    }
+}
+}
