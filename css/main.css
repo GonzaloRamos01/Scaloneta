@@ -277,25 +277,18 @@ footer {
 
 @media only screen and (max-width: 480px) {
   nav {
-    flex-direction: column;
-    justify-content: center; }
-    nav .nav__logo--imagen {
-      margin-top: 5px; }
-    nav .nav__links {
+    flex-direction: column; }
+    nav .nav .nav__links {
       flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap; }
-      nav .nav__links .nav__item {
-        margin: 0px 0px; }
-        nav .nav__links .nav__item .nav__link {
-          font-size: 0.2rem; }
+      flex-wrap: wrap;
+      justify-content: center; }
+      nav .nav .nav__links .nav__item {
+        margin: 5%; }
+        nav .nav .nav__links .nav__item .nav__link {
+          font-size: 1.5rem; }
     nav .search {
       height: 30px;
-      margin-bottom: 4px;
-      margin-top: 2px;
-      font-size: 1em; }
-      nav .search:focus {
-        transition: all 0s; } }
+      color: white; } }
 
 @media only screen and (max-width: 480px) {
   .gridcontainercontacto {

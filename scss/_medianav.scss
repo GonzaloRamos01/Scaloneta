@@ -1,30 +1,24 @@
 @media only screen and (max-width:480px){
     nav{
         flex-direction: column;
-        justify-content: center;
-        .nav__logo--imagen{
-            margin-top: 5px;
-        }
-        .nav__links {
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-            .nav__item {
-                margin:0px 0px;
-                .nav__link{
-                    font-size: 0.2rem;
+
+        .nav {
+            .nav__links {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                .nav__item {
+                    margin: 5%;
+                    .nav__link {
+                        font-size: 1.5rem;
+                    }
                 }
             }
+    
         }
         .search {
             height: 30px;
-            margin-bottom: 4px;
-            margin-top: 2px;
-            font-size: 1em;
-            &:focus{
-                transition: all 0s;
-            }
+            color: white;
         }
-        
-    }
+        }
 }
