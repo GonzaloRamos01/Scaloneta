@@ -1,0 +1,25 @@
+
+
+$redes: (
+	1: #51aff8,
+	2: #2956a3,
+	3: #ce1312,
+);
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .cajax{
+    background-color: rgb(110, 110, 161);
+    @include sizes(100px,50px);
+    color: antiquewhite;
+    margin:5px;
+}
+@each $name, $color in $redes {
+    .caja--#{$name} {
+        color: $color;
+        @extend .cajax;
+        }
+    }
+   
