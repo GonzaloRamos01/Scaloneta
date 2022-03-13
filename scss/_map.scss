@@ -1,5 +1,22 @@
-
-
+$estilos:(
+    colorfuente:#f10,
+    altura:50px,
+    ancho:100px,
+    color:#fff,
+    alineacion:center,
+    margin:5px,
+    fuente:1rem,
+);
+.divmap {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, alineacion);
+    margin: map-get($estilos, margin);
+    font-size:map-get($estilos, fuente);
+    width: map-get($estilos, ancho );
+    height: map-get($estilos, altura );
+    color: map-get($estilos, colorfuente );
+  }
+  
 $redes: (
 	1: #51aff8,
 	2: #2956a3,
