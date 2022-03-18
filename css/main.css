@@ -76,7 +76,7 @@ footer {
   display: grid;
   grid-template-areas: "nav nav" "main main" "footer footer";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 12vh 80vh 10vh; }
+  grid-template-rows: 12vh auto 10vh; }
 
 .main {
   width: 100%;
@@ -91,8 +91,11 @@ footer {
       margin: 20px;
       font-size: 1.7em;
       text-align: center; }
+    .main .div__texto .texto__parrafo2 {
+      font-size: 1.3rem;
+      margin: 20px; }
     .main .div__texto .texto__parrafo {
-      font-size: 1em;
+      font-size: 1.3rem;
       margin: 20px; }
       .main .div__texto .texto__parrafo .linkcontacto {
         color: white;

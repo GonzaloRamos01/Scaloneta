@@ -5,7 +5,7 @@
     "main main"
     "footer footer";
     grid-template-columns: 50% 50%;
-    grid-template-rows:12vh 80vh 10vh;
+    grid-template-rows:12vh auto 10vh;
     }
 
 .main {
@@ -22,8 +22,12 @@
             font-size: 1.7em;
             text-align: center;
         }
+        .texto__parrafo2{
+            font-size: 1.3rem;
+            margin: 20px;
+        }
         .texto__parrafo {
-            font-size: 1em;
+            font-size: 1.3rem;
             margin: 20px;
             .linkcontacto {
                 color: white;
