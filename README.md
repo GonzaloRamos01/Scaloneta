@@ -14,4 +14,4 @@ npm install
 ``` 
 ## Vista anticipada
 Preview del sitio web
-![preview](/preview.png)
+![preview](images/preview.PNG)
